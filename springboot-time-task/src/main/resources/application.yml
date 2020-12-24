@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/task?serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+  quartz:
+    job-store-type: jdbc
+    jdbc:
+      # always 自动生成数据库表，never 将不生成j
+      initialize-schema: always
+
+server:
+  port: 8088
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:**/mapper/*.xml
+
+
+task:
+  enable:
+    static: false
+    dynamic: false
+    multi: false
+quartz:
+  enable: true
+
