@@ -12,6 +12,7 @@
         <module>tool-util</module>
         <module>springboot-time-task</module>
         <module>springboot-elasticsearch</module>
+        <module>springboot-redis</module>
     </modules>
 
     <parent>
@@ -55,11 +56,11 @@
             <artifactId>spring-boot-starter-quartz</artifactId>
         </dependency>
 
-<!--        <dependency>-->
-<!--            <groupId>com.alibaba</groupId>-->
-<!--            <artifactId>druid</artifactId>-->
-<!--            <version>1.0.11</version>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.11</version>
+        </dependency>
 
         <dependency>
             <groupId>org.projectlombok</groupId>

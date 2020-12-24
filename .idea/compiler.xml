@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="tool-util" />
         <module name="springboot-time-task" />
+        <module name="springboot-redis" />
         <module name="springboot-elasticsearch" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springboot-elasticsearch" options="-parameters" />
+      <module name="springboot-redis" options="-parameters" />
       <module name="springboot-time-task" options="-parameters" />
       <module name="tool-util" options="-parameters" />
     </option>
