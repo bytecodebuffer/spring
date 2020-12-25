@@ -4,11 +4,11 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.supoman.dao.EmpDao">
 
-    <select id="getEmpList" resultType="cn.supoman.model.entity.Emp">
+    <select id="getEmpList" resultType="cn.supoman.top.model.entity.Emp">
         select * from t_emp
     </select>
 
-    <select id="getEmpById" resultType="cn.supoman.model.entity.Emp">
+    <select id="getEmpById" resultType="cn.supoman.top.model.entity.Emp">
         select * from t_emp where id = #{id}
     </select>
 
