@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="springboot-insert-batch" />
         <module name="tool-util" />
         <module name="springboot-redis" />
         <module name="springboot-elasticsearch" />
@@ -23,6 +24,7 @@
       <module name="springboot-annotation" options="-parameters" />
       <module name="springboot-easy-acptcha" options="-parameters" />
       <module name="springboot-elasticsearch" options="-parameters" />
+      <module name="springboot-insert-batch" options="-parameters" />
       <module name="springboot-redis" options="-parameters" />
       <module name="springboot-time-task" options="-parameters" />
       <module name="springboot-tx-cos-image" options="-parameters" />

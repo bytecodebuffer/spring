@@ -17,6 +17,7 @@
         <module>springboot-websocket</module>
         <module>springboot-tx-cos-image</module>
         <module>springboot-easy-acptcha</module>
+        <module>springboot-insert-batch</module>
     </modules>
 
     <parent>

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.supoman.dao.EmpDao">
+<mapper namespace="cn.supoman.top.dao.EmpDao">
 
     <select id="getEmpList" resultType="cn.supoman.top.model.entity.Emp">
         select * from t_emp
