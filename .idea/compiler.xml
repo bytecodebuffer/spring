@@ -16,6 +16,7 @@
         <module name="springboot-solr" />
         <module name="springboot-time-task" />
         <module name="springboot-tx-cos-image" />
+        <module name="springboot-stl-demo" />
         <module name="springboot-annotation" />
         <module name="springboot-easy-acptcha" />
       </profile>
@@ -30,6 +31,7 @@
       <module name="springboot-insert-batch" options="-parameters" />
       <module name="springboot-redis" options="-parameters" />
       <module name="springboot-solr" options="-parameters" />
+      <module name="springboot-stl-demo" options="-parameters" />
       <module name="springboot-time-task" options="-parameters" />
       <module name="springboot-tx-cos-image" options="-parameters" />
       <module name="springboot-websocket" options="-parameters" />

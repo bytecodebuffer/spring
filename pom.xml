@@ -20,6 +20,7 @@
         <module>springboot-insert-batch</module>
         <module>springboot-solr</module>
         <module>kafka-client</module>
+        <module>springboot-stl-demo</module>
     </modules>
 
     <parent>
