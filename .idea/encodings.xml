@@ -5,6 +5,7 @@
     <file url="file://$PROJECT_DIR$/springboot-elasticsearch/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-time-task/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-tx-cos-image/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-websocket/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/tool-util/src/main/java" charset="UTF-8" />
   </component>

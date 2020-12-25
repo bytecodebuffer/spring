@@ -8,11 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="tool-util" />
-        <module name="springboot-time-task" />
         <module name="springboot-redis" />
         <module name="springboot-elasticsearch" />
-        <module name="springboot-annotation" />
         <module name="springboot-websocket" />
+        <module name="springboot-time-task" />
+        <module name="springboot-tx-cos-image" />
+        <module name="springboot-annotation" />
       </profile>
     </annotationProcessing>
   </component>
@@ -22,6 +23,7 @@
       <module name="springboot-elasticsearch" options="-parameters" />
       <module name="springboot-redis" options="-parameters" />
       <module name="springboot-time-task" options="-parameters" />
+      <module name="springboot-tx-cos-image" options="-parameters" />
       <module name="springboot-websocket" options="-parameters" />
       <module name="tool-util" options="-parameters" />
     </option>
