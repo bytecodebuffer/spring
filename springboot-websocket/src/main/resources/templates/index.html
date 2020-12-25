@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<div style="line-height: 50px;">
+			<h1 style="color: red;display: inline;">websocket 测试 </h1>
+			<h4 id="userId" style="color: darkviolet;display: inline;"></h4>
+			
+		</div>
+		<div>
+			<button onclick="connectWs()">建立连接</button>
+			<button onclick="closeWs()">断开连接</button>
+			<input id="text" type="text"/> 
+			<button onclick="send()">客户端发送</button>
+			<!--<button onclick="location.href='localhost:8080/sendBatch5'">服务端广播：5条</button>-->
+		</div>
+		<h4 style="color: cornflowerblue;">操作信息：</h4>
+		<div style="width: 100%;">
+			<div id= "timeDiv" style="width: 10%;float: left;"></div>
+			<div id="msgDiv" style="color:green;width: 40%;float: left;"></div>
+		</div>
+		
+	<script>
+		var ws = null;
+		
+		/*打开即建立连接*/
+		if ('WebSocket' in window) {
+			document.getElementById("userId").innerHTML +=getUuid();
+			var userId = document.getElementById("userId").innerHTML;
+        	ws = new WebSocket("ws://127.0.0.1:8080/socketServer/"+userId);
+  		}		
+   		else {
+        	alert('Not support websocket')
+    	}
+		
+		//格式化时间
+		function dateFormat(fmt, date) {
+    		let ret;
+    		const opt = {
+        	"Y+": date.getFullYear().toString(),        // 年
+        	"m+": (date.getMonth() + 1).toString(),     // 月
+        	"d+": date.getDate().toString(),            // 日
+        	"H+": date.getHours().toString(),           // 时
+        	"M+": date.getMinutes().toString(),         // 分
+        	"S+": date.getSeconds().toString()          // 秒
+    		};
+    		for (let k in opt) {
+       	 		ret = new RegExp("(" + k + ")").exec(fmt);
+        		if (ret) {
+            		fmt = fmt.replace(ret[1], (ret[1].length == 1) ? (opt[k]) : (opt[k].padStart(ret[1].length, "0")))
+        		};
+   		 	};
+    		return fmt;
+		}
+		
+		
+		//连接发送错误回调方法
+		ws.onerror = function () {
+        	setMessageInnerHTML("error");
+    	};
+		
+		//收到消息调用
+		ws.onmessage = function getMsg(event){
+			setMessageInnerHTML(event.data);
+		}
+		
+		//建立连接调用
+		ws.onopen = function(event){
+			setMessageInnerHTML("open");
+		}
+		
+		
+		//关闭连接调用
+		ws.onclose = function(){
+			setMessageInnerHTML("close");
+		}
+		
+		//监听窗口,窗口关闭,主动关闭连接
+		window.onbeforeunload = function(){
+			ws.close();
+		}
+		  
+		//将消息显示在页面
+    	function setMessageInnerHTML(msg) {
+    		document.getElementById("timeDiv").innerHTML+=dateFormat("YYYY-mm-dd HH:MM:SS", new Date())+"<br>";
+        	document.getElementById('msgDiv').innerHTML +=msg + '<br/>';
+    	}
+    	
+    	//关闭连接
+    	function closeWs(){
+    		if(ws==null || ws.readyState!=1){
+    			alert("连接未打开");
+    			return;
+    		}
+    		setMessageInnerHTML("客户端关闭连接");
+    		document.getElementById("userId").innerHTML ="";
+    		ws.close();
+    	}
+    	
+    	//建立连接
+    	function connectWs(){
+    		if(ws!=null && ws.readyState ==1){
+    			alert("连接已经建立");
+    			return;
+    		}
+    		document.getElementById("userId").innerHTML =getUuid();
+			var userId = document.getElementById("userId").innerHTML;
+    		ws = new WebSocket("ws://127.0.0.1:8080/socketServer/"+userId);
+    		setMessageInnerHTML("客户端建立连接");
+    		
+			ws.onclose = function(){
+				setMessageInnerHTML("close");
+			}
+			
+    		ws.onopen = function(event){
+				setMessageInnerHTML("open");
+			}
+    		
+    		ws.onmessage = function getMsg(event){
+				setMessageInnerHTML(event.data);
+			}
+    	}
+    	
+    	//发送消息
+    	function send(){
+    		if(ws==null || ws.readyState!=1){
+    			alert("连接未打开!");
+    			return;
+    		}
+    		var message = document.getElementById("text").value;
+    		var message = document.getElementById("userId").innerHTML+"-"+message;
+    		ws.send(message);
+    	}
+    
+      //生成唯一随机数
+      function getUuid() {
+        var s = [];
+        var hexDigits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        for (var i = 0; i < 10; i++) {
+          s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1)
+        }
+        s[14] = "4"
+        s[19] = hexDigits.substr((s[19] & 0x3) | 0x8, 1)
+        //s[8] = s[13] = s[18] = s[23] = "-"
+        let uuid = s.join("")
+        return uuid
+      }
+	</script>
+	
+	</body>
+</html>

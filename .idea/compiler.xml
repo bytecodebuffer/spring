@@ -12,6 +12,7 @@
         <module name="springboot-redis" />
         <module name="springboot-elasticsearch" />
         <module name="springboot-annotation" />
+        <module name="springboot-websocket" />
       </profile>
     </annotationProcessing>
   </component>
@@ -21,6 +22,7 @@
       <module name="springboot-elasticsearch" options="-parameters" />
       <module name="springboot-redis" options="-parameters" />
       <module name="springboot-time-task" options="-parameters" />
+      <module name="springboot-websocket" options="-parameters" />
       <module name="tool-util" options="-parameters" />
     </option>
   </component>
