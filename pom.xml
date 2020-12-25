@@ -19,6 +19,7 @@
         <module>springboot-easy-acptcha</module>
         <module>springboot-insert-batch</module>
         <module>springboot-solr</module>
+        <module>kafka-client</module>
     </modules>
 
     <parent>
