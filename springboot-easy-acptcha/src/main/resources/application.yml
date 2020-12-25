@@ -1,0 +1,6 @@
+spring:
+  redis:
+    host: 81.68.206.246
+    database: 1
+    password: bzz.299616
+    port: 6379

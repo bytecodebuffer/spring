@@ -14,12 +14,14 @@
         <module name="springboot-time-task" />
         <module name="springboot-tx-cos-image" />
         <module name="springboot-annotation" />
+        <module name="springboot-easy-acptcha" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springboot-annotation" options="-parameters" />
+      <module name="springboot-easy-acptcha" options="-parameters" />
       <module name="springboot-elasticsearch" options="-parameters" />
       <module name="springboot-redis" options="-parameters" />
       <module name="springboot-time-task" options="-parameters" />

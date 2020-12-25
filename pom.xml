@@ -16,6 +16,7 @@
         <module>springboot-annotation</module>
         <module>springboot-websocket</module>
         <module>springboot-tx-cos-image</module>
+        <module>springboot-easy-acptcha</module>
     </modules>
 
     <parent>
@@ -47,6 +48,7 @@
             <version>1.2.58</version>
         </dependency>
 
+        <!--redis 相关依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
@@ -140,6 +142,13 @@
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>20160810</version>
+        </dependency>
+
+        <!--验证码依赖-->
+        <dependency>
+            <groupId>com.github.whvcse</groupId>
+            <artifactId>easy-captcha</artifactId>
+            <version>1.6.2</version>
         </dependency>
 
     </dependencies>
