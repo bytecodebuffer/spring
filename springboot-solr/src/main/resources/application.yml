@@ -1,0 +1,9 @@
+
+spring:
+  application:
+    name: solr
+  data:
+    solr:
+      host: http://81.68.206.246:8080/solr/computer
+server:
+  port: 8888
