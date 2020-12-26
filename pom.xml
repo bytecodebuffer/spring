@@ -22,6 +22,7 @@
         <module>kafka-client</module>
         <module>springboot-stl-demo</module>
         <module>thread</module>
+        <module>springboot-websocket-kafka</module>
     </modules>
 
     <parent>

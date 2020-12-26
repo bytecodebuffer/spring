@@ -12,6 +12,7 @@
         <module name="thread" />
         <module name="springboot-easy-acptcha" />
         <module name="kafka-client" />
+        <module name="springboot-websocket-kafka" />
         <module name="springboot-redis" />
         <module name="springboot-elasticsearch" />
         <module name="springboot-websocket" />
@@ -36,6 +37,7 @@
       <module name="springboot-time-task" options="-parameters" />
       <module name="springboot-tx-cos-image" options="-parameters" />
       <module name="springboot-websocket" options="-parameters" />
+      <module name="springboot-websocket-kafka" options="-parameters" />
       <module name="thread" options="-parameters" />
       <module name="tool-util" options="-parameters" />
     </option>
