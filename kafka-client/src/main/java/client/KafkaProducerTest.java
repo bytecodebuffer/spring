@@ -5,6 +5,7 @@ import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.serialization.StringSerializer;
 
 import java.util.Properties;
+import java.util.Scanner;
 
 /**
  * @author bz
@@ -17,7 +18,7 @@ public class KafkaProducerTest implements Runnable{
 
     public KafkaProducerTest(String topicName){
         Properties properties = new Properties();
-        properties.put("bootstrap.servers", "81.68.206.246:9092,81.68.206.246:9093,81.68.206.246:9094");
+        properties.put("bootstrap.servers", "kafka-test-dev.forexmedia.com:9092,kafka-test-dev.forexmedia.com:9093,kafka-test-dev.forexmedia.com:9094,kafka-test-dev.forexmedia.com:9095");
         properties.put("acks", "all");
         properties.put("retries", 0);
         properties.put("batch.size", 16384);
@@ -30,13 +31,14 @@ public class KafkaProducerTest implements Runnable{
 
     @Override
     public void run() {
+        Scanner scanner = new Scanner(System.in);
         int msgNumber = 1;
         try {
             while (true){
-                String messageStr="你好，这是第"+msgNumber+"条数据";
+                String msg = scanner.nextLine();
                 Thread.sleep(500);
-                producer.send(new ProducerRecord<String, String>(topic, "msg"+msgNumber, messageStr));
-                System.out.println("发送的信息:" + messageStr);
+                producer.send(new ProducerRecord<String, String>(topic, "msg："+msgNumber, msg));
+                System.out.println("发送的信息:" + msg);
                 if(msgNumber%20==0){
                     System.out.println("成功发送了"+msgNumber+"条");
                     break;
@@ -51,7 +53,7 @@ public class KafkaProducerTest implements Runnable{
     }
 
     public static void main(String[] args) {
-        KafkaProducerTest test = new KafkaProducerTest("factory");
+        KafkaProducerTest test = new KafkaProducerTest("message.push.test");
         Thread thread = new Thread(test);
         thread.start();
     }

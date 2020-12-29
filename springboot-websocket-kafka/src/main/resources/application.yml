@@ -1,0 +1,27 @@
+# 数据库配置
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://rm-wz9qj2668zc55q814bo.mysql.rds.aliyuncs.com/niu-db-test?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=convertToNull
+      username: niu_user
+      password: OKD#Dxl&x#dolD*SX2&ss*fDdK
+  kafka:
+    bootstrap-servers: kafka-test-dev.forexmedia.com:9092,kafka-test-dev.forexmedia.com:9093,kafka-test-dev.forexmedia.com:9094,kafka-test-dev.forexmedia.com:9095
+    consumer:
+      group-id: message.group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+logging:
+  level:
+    com.stl.niu.frontend: debug
+
+stl:
+  config:
+    kafka:
+      topic:
+        message-push: message.push.test
