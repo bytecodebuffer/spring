@@ -1,12 +1,12 @@
-package websocket.server;
+package top.websocket.server;
 
 
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
-import util.JsonUtils;
-import websocket.vo.MessageObject;
-import websocket.vo.NotificationInfoEntity;
+import top.util.JsonUtils;
+import top.websocket.vo.MessageObject;
+import top.websocket.vo.NotificationInfoEntity;
 import javax.websocket.*;
 import javax.websocket.server.PathParam;
 import javax.websocket.server.ServerEndpoint;

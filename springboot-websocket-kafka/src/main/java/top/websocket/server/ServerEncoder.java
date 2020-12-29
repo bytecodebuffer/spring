@@ -1,7 +1,7 @@
-package websocket.server;
+package top.websocket.server;
 
 import com.alibaba.fastjson.JSON;
-import websocket.vo.MessageObject;
+import top.websocket.vo.MessageObject;
 import javax.websocket.EncodeException;
 import javax.websocket.Encoder;
 import javax.websocket.EndpointConfig;

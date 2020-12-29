@@ -1,4 +1,4 @@
-package websocket.enums;
+package top.websocket.enums;
 
 import java.lang.reflect.Method;
 

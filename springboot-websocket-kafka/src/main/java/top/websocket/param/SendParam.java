@@ -1,4 +1,4 @@
-package websocket.param;
+package top.websocket.param;
 
 import lombok.Data;
 

@@ -25,3 +25,6 @@ stl:
     kafka:
       topic:
         message-push: message.push.test
+
+server:
+  port: 8090

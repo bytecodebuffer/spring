@@ -1,4 +1,4 @@
-package websocket.vo;
+package top.websocket.vo;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;

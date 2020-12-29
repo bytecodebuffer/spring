@@ -1,4 +1,4 @@
-package websocket.controller;
+package top.websocket.controller;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -6,11 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-import websocket.enums.NotificationTypeEnum;
-import websocket.param.SendParam;
-import websocket.server.WebServerEndpoint;
-import websocket.vo.MessageObject;
-import websocket.vo.NotificationInfoEntity;
+import top.websocket.enums.NotificationTypeEnum;
+import top.websocket.param.SendParam;
+import top.websocket.server.WebServerEndpoint;
+import top.websocket.vo.MessageObject;
+import top.websocket.vo.NotificationInfoEntity;
 
 /**
  * @author bz
