@@ -21,7 +21,6 @@ public class KafkaProducerManager implements SuccessCallback<SendResult<String ,
     private final KafkaTemplate<String ,String> kafkaTemplate;
 
 
-
     public void sendMessage(String topic, String message) {
         ListenableFuture<SendResult<String, String>> resultListenableFuture = kafkaTemplate.send(topic,message);
         resultListenableFuture.addCallback(this, this);
@@ -37,6 +36,5 @@ public class KafkaProducerManager implements SuccessCallback<SendResult<String ,
     public void onFailure(Throwable throwable) {
         log.error(throwable.getLocalizedMessage());
     }
-
 
 }
