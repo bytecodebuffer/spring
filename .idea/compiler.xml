@@ -20,13 +20,21 @@
         <module name="springboot-time-task" />
         <module name="springboot-tx-cos-image" />
         <module name="springboot-stl-demo" />
+        <module name="spring-boot-kafka-producer" />
+        <module name="spring-boot-kafka-consumer" />
         <module name="springboot-annotation" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-boot-start" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="kafka-client" options="-parameters" />
+      <module name="spring-boot-kafka-consumer" options="-parameters" />
+      <module name="spring-boot-kafka-producer" options="-parameters" />
+      <module name="spring-boot-start" options="-parameters" />
       <module name="springboot-annotation" options="-parameters" />
       <module name="springboot-easy-acptcha" options="-parameters" />
       <module name="springboot-elasticsearch" options="-parameters" />
