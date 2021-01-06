@@ -23,6 +23,7 @@
         <module name="spring-boot-kafka-producer" />
         <module name="spring-boot-kafka-consumer" />
         <module name="springboot-annotation" />
+        <module name="spring-boot-elasticsearch-6.x" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -32,6 +33,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="kafka-client" options="-parameters" />
+      <module name="spring-boot-elasticsearch-6.x" options="-parameters" />
       <module name="spring-boot-kafka-consumer" options="-parameters" />
       <module name="spring-boot-kafka-producer" options="-parameters" />
       <module name="spring-boot-start" options="-parameters" />

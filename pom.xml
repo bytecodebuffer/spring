@@ -25,7 +25,7 @@
         <module>springboot-websocket-kafka</module>
         <module>spring-boot-kafka-producer</module>
         <module>spring-boot-kafka-consumer</module>
-        <module>spring-boot-start</module>
+        <module>spring-boot-elasticsearch-6.x</module>
     </modules>
 
     <parent>
