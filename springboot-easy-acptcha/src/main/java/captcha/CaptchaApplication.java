@@ -3,11 +3,14 @@ package captcha;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author Admin
+ */
 @SpringBootApplication
-public class EasyCaptchaApplication {
+public class CaptchaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EasyCaptchaApplication.class, args);
+		SpringApplication.run(CaptchaApplication.class, args);
 	}
 
 }
