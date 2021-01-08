@@ -20,10 +20,11 @@ public class DoubleUtil {
         return decimalFormat.format(source);
     }
 
-    public static void main(String[] args) {
-        System.out.println(formatSource(10d));
-        System.out.println(formatSource(10.21401d));
-        System.out.println(formatSource(10.21501d));
-        System.out.println(formatSource(null));
+    public static String format(String source){
+        if(StringUtil.isBlank(source)){
+            return "0.00";
+        }
+        DecimalFormat decimalFormat  = new DecimalFormat("#0.00");
+        return decimalFormat.format (Double.valueOf(source));
     }
 }
