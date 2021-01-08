@@ -12,12 +12,12 @@ import java.text.DecimalFormat;
  */
 public class DoubleUtil {
 
-    public static String formatSource(Double source){
+    public static String format(Double source){
         if(source == null){
-            return "";
+            return "0.00";
         }
-        DecimalFormat decimalFormat = new DecimalFormat("#.00");
-        return decimalFormat.format(source);
+        DecimalFormat decimalFormat  = new DecimalFormat("#0.00");
+        return decimalFormat.format (source);
     }
 
     public static String format(String source){
@@ -25,6 +25,13 @@ public class DoubleUtil {
             return "0.00";
         }
         DecimalFormat decimalFormat  = new DecimalFormat("#0.00");
-        return decimalFormat.format (Double.valueOf(source));
+        return decimalFormat.format (parseDouble(source));
+    }
+
+    public static Double parseDouble(String source){
+        if(StringUtil.isBlank(source) || StringUtil.isBlank(source)){
+            return 0.00;
+        }
+        return Double.parseDouble(source);
     }
 }
