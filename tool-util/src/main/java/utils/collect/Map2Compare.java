@@ -27,7 +27,7 @@ public class Map2Compare {
                 new Student(30,"韩企",29)
         );
 
-        studentList = studentList.stream()
+        studentList = studentList.parallelStream()
                 .sorted(Comparator.comparing(Student::getId).thenComparing(Student::getAge,Comparator.reverseOrder()))
                 .collect(Collectors.toList());
 
