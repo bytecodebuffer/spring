@@ -30,8 +30,5 @@ public class List2Group {
         }
 
 
-
-
-
     }
 }
