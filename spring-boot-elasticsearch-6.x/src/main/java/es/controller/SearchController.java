@@ -1,55 +1,96 @@
 package es.controller;
 
+
+
 import es.entity.TradingAccount;
-import es.repository.TradingAccountRepository;
+import es.util.JsonUtils;
+import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.lucene.queryparser.xml.builders.BooleanQueryBuilder;
+import org.apache.lucene.search.BooleanQuery;
+import org.elasticsearch.action.search.SearchRequest;
+import org.elasticsearch.action.search.SearchResponse;
+import org.elasticsearch.client.RequestOptions;
 import org.elasticsearch.client.RestHighLevelClient;
-import org.elasticsearch.index.query.QueryBuilder;
+import org.elasticsearch.index.query.BoolQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
+import org.elasticsearch.index.query.WildcardQueryBuilder;
+import org.elasticsearch.search.SearchHit;
+import org.elasticsearch.search.SearchHits;
+import org.elasticsearch.search.aggregations.AggregationBuilder;
+import org.elasticsearch.search.aggregations.AggregationBuilders;
+import org.elasticsearch.search.aggregations.bucket.terms.TermsAggregationBuilder;
+import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+
 
 /**
  * @author bz
  * @date 2021/1/6
  */
+@Slf4j
 @RestController
+@AllArgsConstructor
 public class SearchController {
 
-    @Autowired
-    private RestHighLevelClient restHighLevelClient;
-    @Autowired
-    private TradingAccountRepository tradingAccountRepository;
 
+    private final RestHighLevelClient client;
 
+    private static final String index = "trading_account";
 
     @GetMapping("/search")
-    public List<TradingAccount> search(String keyword){
-        QueryBuilder boolQueryBuilder = QueryBuilders.boolQuery()
-                .should(QueryBuilders.wildcardQuery("username","*"+keyword+"*"))
-                .should(QueryBuilders.matchQuery("username",keyword))
-                .should(QueryBuilders.wildcardQuery("accountNum","*"+keyword+"*"))
-                .should(QueryBuilders.wildcardQuery("fxCode","*"+keyword+"*"));
-        Page<TradingAccount> page =  tradingAccountRepository.search(boolQueryBuilder,PageRequest.of(0,7));
-        return TradingAccount.exchange(page);
+    public  List<TradingAccount> search(String keyword) throws Exception{
+
+        SearchRequest searchRequest = new SearchRequest(index);
+
+        SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+
+        BoolQueryBuilder boolQuery = QueryBuilders.boolQuery();
+
+        boolQuery.should(QueryBuilders.termQuery("username",keyword));
+        //分页-排序
+        searchSourceBuilder.from(0);
+        searchSourceBuilder.size(3);
+        searchSourceBuilder.sort("createTime");
+        searchSourceBuilder.query(boolQuery);
+
+        searchRequest.source(searchSourceBuilder);
+
+        SearchResponse response = client.search(searchRequest,RequestOptions.DEFAULT);
+
+        SearchHits searchHits = response.getHits();
+
+        List<TradingAccount> tradingAccountList = new ArrayList<>();
+        if(searchHits!=null){
+            SearchHit[] searchHitList = searchHits.getHits();
+            for(SearchHit item : searchHitList){
+                TradingAccount tradingAccount = JsonUtils.json2obj(item.getSourceAsString(), TradingAccount.class);
+                tradingAccount.setId(item.getId());
+                tradingAccountList.add(tradingAccount);
+            }
+        }
+        return tradingAccountList;
     }
 
-    @GetMapping("/clone")
-    public void clone2es(){
-        tradingAccountRepository.deleteAll();
-        List<TradingAccount> tradingAccountList = Arrays.asList(
-                  new TradingAccount("1","1001","7894",1001L,"1452","1452","zhang san"),
-                  new TradingAccount("2","1002","4578",1002L,"1452","1452","张阿森纳"),
-                  new TradingAccount("3","1003","4542",1003L,"1452","1452","上善若水"),
-                  new TradingAccount("4","1004","4547",1004L,"1452","1452","上善上述"),
-                  new TradingAccount("5","10015","4578",1005L,"1452","1452","闪闪来u从")
-        );
-        tradingAccountRepository.saveAll(tradingAccountList);
+    @GetMapping("/delete")
+    public void delete(){
+
     }
+
+    @GetMapping("/save")
+    public void save(){
+
+    }
+
+    public void clone2Elasticsearch(){
+
+    }
+
+
 
 }

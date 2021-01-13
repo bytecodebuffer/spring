@@ -1,4 +1,7 @@
-spring:
- elasticsearch:
-    rest:
-        uris: ["http://47.112.37.35:9200"]
+elasticsearch:
+  host: 47.112.37.35
+  port: 9200
+  connTimeout: 3000
+  socketTimeout: 5000
+  connectionRequestTimeout: 500
+
