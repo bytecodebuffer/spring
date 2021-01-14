@@ -62,7 +62,6 @@ public class DateUtil {
 
     public static void main(String[] args) {
 
-        System.out.println(str2date("2020-10-10"));
     }
 
 }

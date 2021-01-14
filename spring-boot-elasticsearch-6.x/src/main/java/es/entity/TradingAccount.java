@@ -2,6 +2,7 @@ package es.entity;
 
 
 import lombok.Data;
+import java.util.Map;
 
 /**
  * @author bz
@@ -23,5 +24,7 @@ public class TradingAccount {
     private String avatar;
 
     private String username;
+
+    private Map<String, String> highLightMap;
 
 }
