@@ -1,3 +1,8 @@
+## demo-thread
+线程安全测试，包含DCL （double check lock）,单例
+
+## 依赖
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -33,3 +38,4 @@
     </dependencies>
 
 </project>
+```

@@ -42,6 +42,41 @@
 项目地址: [https://github.com/byebai95/spring](https://github.com/byebai95/spring) 
 >  客官, 如果有帮到你,不如送个star 再走吧
 
+##项目模块
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.baizhuang</groupId>
+    <artifactId>spring</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>demo-tool-util</module>
+        <module>springboot-time-task</module>
+        <module>springboot-elasticsearch</module>
+        <module>springboot-redis</module>
+        <module>springboot-annotation</module>
+        <module>springboot-websocket</module>
+        <module>springboot-tx-cos-image</module>
+        <module>springboot-easy-captcha</module>
+        <module>springboot-insert-batch</module>
+        <module>springboot-solr</module>
+        <module>demo-kafka-client</module>
+        <module>springboot-stl-demo</module>
+        <module>demo-thread</module>
+        <module>springboot-websocket-kafka</module>
+        <module>springboot-kafka-producer</module>
+        <module>springboot-kafka-consumer</module>
+        <module>springboot-elasticsearch-6.x</module>
+        <module>springboot-start-web</module>
+        <module>springboot-schedule-job</module>
+    </modules>
+</project>
+```
 
 
 

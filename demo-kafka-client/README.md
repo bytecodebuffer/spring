@@ -1,3 +1,12 @@
+## demo-kafka-client
+kafka Java 客户端 
+
+##使用
+修改 kafka 服务端 ip , port 
+启动 main 方法
+
+## 依赖
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -33,3 +42,4 @@
     </dependencies>
 
 </project>
+```
