@@ -9,25 +9,25 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>tool-util</module>
+        <module>demo-tool-util</module>
         <module>springboot-time-task</module>
         <module>springboot-elasticsearch</module>
         <module>springboot-redis</module>
         <module>springboot-annotation</module>
         <module>springboot-websocket</module>
         <module>springboot-tx-cos-image</module>
-        <module>springboot-easy-acptcha</module>
+        <module>springboot-easy-captcha</module>
         <module>springboot-insert-batch</module>
         <module>springboot-solr</module>
-        <module>kafka-client</module>
+        <module>demo-kafka-client</module>
         <module>springboot-stl-demo</module>
-        <module>thread</module>
+        <module>demo-thread</module>
         <module>springboot-websocket-kafka</module>
-        <module>spring-boot-kafka-producer</module>
-        <module>spring-boot-kafka-consumer</module>
-        <module>spring-boot-elasticsearch-6.x</module>
+        <module>springboot-kafka-producer</module>
+        <module>springboot-kafka-consumer</module>
+        <module>springboot-elasticsearch-6.x</module>
         <module>springboot-start-web</module>
-        <module>schedule-job</module>
+        <module>springboot-schedule-job</module>
     </modules>
 
     <parent>
@@ -39,23 +39,6 @@
 
     <dependencies>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-
-
-        <!--redis 相关依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.httpcomponents</groupId>
-            <artifactId>httpclient</artifactId>
-            <version>4.5.5</version>
-        </dependency>
 
 
         <dependency>
@@ -64,7 +47,6 @@
             <version>2.2.0</version>
             <scope>test</scope>
         </dependency>
-
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -83,27 +65,6 @@
             </exclusions>
         </dependency>
 
-
-        <!--腾讯云cos 对象存储-->
-        <dependency>
-            <groupId>com.qcloud</groupId>
-            <artifactId>cos_api</artifactId>
-            <version>5.6.24</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20160810</version>
-        </dependency>
-
-
-
-        <!--solr 依赖-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-solr</artifactId>
-        </dependency>
 
     </dependencies>
 

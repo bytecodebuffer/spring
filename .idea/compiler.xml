@@ -8,24 +8,24 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-insert-batch" />
-        <module name="tool-util" />
-        <module name="thread" />
-        <module name="springboot-easy-acptcha" />
-        <module name="kafka-client" />
+        <module name="springboot-easy-captcha" />
+        <module name="springboot-kafka-consumer" />
+        <module name="springboot-schedule-job" />
         <module name="springboot-websocket-kafka" />
+        <module name="demo-tool-util" />
         <module name="springboot-redis" />
-        <module name="schedule-job" />
+        <module name="springboot-elasticsearch-6.x" />
+        <module name="demo-kafka-client" />
+        <module name="springboot-kafka-producer" />
         <module name="springboot-elasticsearch" />
         <module name="springboot-websocket" />
         <module name="springboot-solr" />
         <module name="springboot-start-web" />
+        <module name="demo-thread" />
         <module name="springboot-time-task" />
         <module name="springboot-tx-cos-image" />
         <module name="springboot-stl-demo" />
-        <module name="spring-boot-kafka-producer" />
-        <module name="spring-boot-kafka-consumer" />
         <module name="springboot-annotation" />
-        <module name="spring-boot-elasticsearch-6.x" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -34,17 +34,19 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="kafka-client" options="-parameters" />
-      <module name="schedule-job" options="-parameters" />
-      <module name="spring-boot-elasticsearch-6.x" options="-parameters" />
-      <module name="spring-boot-kafka-consumer" options="-parameters" />
-      <module name="spring-boot-kafka-producer" options="-parameters" />
+      <module name="demo-kafka-client" options="-parameters" />
+      <module name="demo-thread" options="-parameters" />
+      <module name="demo-tool-util" options="-parameters" />
       <module name="spring-boot-start" options="-parameters" />
       <module name="springboot-annotation" options="-parameters" />
-      <module name="springboot-easy-acptcha" options="-parameters" />
+      <module name="springboot-easy-captcha" options="-parameters" />
       <module name="springboot-elasticsearch" options="-parameters" />
+      <module name="springboot-elasticsearch-6.x" options="-parameters" />
       <module name="springboot-insert-batch" options="-parameters" />
+      <module name="springboot-kafka-consumer" options="-parameters" />
+      <module name="springboot-kafka-producer" options="-parameters" />
       <module name="springboot-redis" options="-parameters" />
+      <module name="springboot-schedule-job" options="-parameters" />
       <module name="springboot-solr" options="-parameters" />
       <module name="springboot-start-web" options="-parameters" />
       <module name="springboot-stl-demo" options="-parameters" />
@@ -52,8 +54,6 @@
       <module name="springboot-tx-cos-image" options="-parameters" />
       <module name="springboot-websocket" options="-parameters" />
       <module name="springboot-websocket-kafka" options="-parameters" />
-      <module name="thread" options="-parameters" />
-      <module name="tool-util" options="-parameters" />
     </option>
   </component>
 </project>
