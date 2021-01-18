@@ -14,9 +14,11 @@
         <module name="kafka-client" />
         <module name="springboot-websocket-kafka" />
         <module name="springboot-redis" />
+        <module name="schedule-job" />
         <module name="springboot-elasticsearch" />
         <module name="springboot-websocket" />
         <module name="springboot-solr" />
+        <module name="springboot-start-web" />
         <module name="springboot-time-task" />
         <module name="springboot-tx-cos-image" />
         <module name="springboot-stl-demo" />
@@ -27,12 +29,13 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spring-boot-start" target="1.8" />
+      <module name="spring-boot-start" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="kafka-client" options="-parameters" />
+      <module name="schedule-job" options="-parameters" />
       <module name="spring-boot-elasticsearch-6.x" options="-parameters" />
       <module name="spring-boot-kafka-consumer" options="-parameters" />
       <module name="spring-boot-kafka-producer" options="-parameters" />
@@ -43,6 +46,7 @@
       <module name="springboot-insert-batch" options="-parameters" />
       <module name="springboot-redis" options="-parameters" />
       <module name="springboot-solr" options="-parameters" />
+      <module name="springboot-start-web" options="-parameters" />
       <module name="springboot-stl-demo" options="-parameters" />
       <module name="springboot-time-task" options="-parameters" />
       <module name="springboot-tx-cos-image" options="-parameters" />
