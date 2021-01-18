@@ -35,6 +35,17 @@ public class ForwardController {
     }
 
     /**
+     * 跳转到登录页
+     * @return
+     */
+    @RequestMapping("/")
+    public ModelAndView login2(){
+        ModelAndView modelAndView = new ModelAndView("login");
+        return modelAndView;
+    }
+
+
+    /**
      * 退出登录
      * @return
      */
