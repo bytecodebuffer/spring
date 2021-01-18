@@ -34,7 +34,7 @@ public class ValidateCodeProperties {
     /**
      * 验证码位数
      */
-    private Integer length = 4;
+    private Integer length = 6;
     /**
      * 验证码类型
      * 1.数字+字母
