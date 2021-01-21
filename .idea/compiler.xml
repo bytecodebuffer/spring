@@ -35,7 +35,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo-kafka-client" options="-parameters" />
-      <module name="demo-thread" options="-parameters" />
+      <module name="demo-thread" options="" />
       <module name="demo-tool-util" options="-parameters" />
       <module name="spring-boot-start" options="-parameters" />
       <module name="springboot-annotation" options="-parameters" />

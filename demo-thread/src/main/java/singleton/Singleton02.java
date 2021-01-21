@@ -1,4 +1,4 @@
-package dcl;
+package singleton;
 
 /**
  * @author bz
@@ -10,11 +10,6 @@ public class Singleton02 {
 
     public static synchronized Singleton02 getInstance(){
         if (instance == null) {
-            try {
-                Thread.sleep(10);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
             instance = new Singleton02();
         }
         return instance;
