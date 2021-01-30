@@ -28,5 +28,6 @@
         <module>springboot-elasticsearch-6.x</module>
         <module>springboot-start-web</module>
         <module>springboot-schedule-job</module>
+        <module>springboot-gaodeMap</module>
     </modules>
 </project>

@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-insert-batch" />
         <module name="springboot-easy-captcha" />
+        <module name="springboot-gaodeMap" />
         <module name="springboot-kafka-consumer" />
         <module name="springboot-schedule-job" />
         <module name="springboot-websocket-kafka" />
@@ -42,6 +43,7 @@
       <module name="springboot-easy-captcha" options="-parameters" />
       <module name="springboot-elasticsearch" options="-parameters" />
       <module name="springboot-elasticsearch-6.x" options="-parameters" />
+      <module name="springboot-gaodeMap" options="-parameters" />
       <module name="springboot-insert-batch" options="-parameters" />
       <module name="springboot-kafka-consumer" options="-parameters" />
       <module name="springboot-kafka-producer" options="-parameters" />
