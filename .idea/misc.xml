@@ -10,6 +10,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/spring-boot-start/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-gaodeMap/pom.xml" />
       </set>
     </option>
   </component>

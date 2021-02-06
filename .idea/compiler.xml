@@ -9,10 +9,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="springboot-insert-batch" />
         <module name="springboot-easy-captcha" />
-        <module name="springboot-gaodeMap" />
         <module name="springboot-kafka-consumer" />
         <module name="springboot-schedule-job" />
-        <module name="springboot-websocket-kafka" />
         <module name="demo-tool-util" />
         <module name="springboot-redis" />
         <module name="springboot-elasticsearch-6.x" />
@@ -31,6 +29,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-boot-start" target="8" />
+      <module name="springboot-gaodeMap" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
