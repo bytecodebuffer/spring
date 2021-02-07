@@ -1,19 +1,23 @@
 package bai.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author bz
  * @date 2021/2/7
  */
-@RestController
+@Controller
 public class TestController {
 
-    @ResponseBody
     @RequestMapping("/index")
     public String hello(){
+        return "index";
+    }
+
+
+    @RequestMapping("/test")
+    public String test(){
         return "index";
     }
 }
