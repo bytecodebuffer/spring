@@ -1,6 +1,8 @@
 package com.supoman.controller;
 
+import com.supoman.config.TestConfig;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,6 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloController {
 
+    @Autowired
+    private TestConfig testConfig;
+
     private  int num = 0;
 
     @GetMapping("/index")
@@ -21,15 +26,9 @@ public class HelloController {
         log.info("Hello,World");
     }
 
-    @GetMapping("test1")
-    public int test1(){
-        num = num + 1;
-        return num;
-    }
-
-    @GetMapping("test2")
-    public int test2(){
-        num = num + 1;
-        return num;
+    @GetMapping("test")
+    public void test1() {
+        System.out.println(testConfig.getName());
+        System.out.println(testConfig.getAge());
     }
 }
