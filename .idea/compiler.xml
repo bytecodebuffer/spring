@@ -29,6 +29,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="rpc" target="8" />
       <module name="spring-boot-start" target="8" />
       <module name="springboot-gaodeMap" target="8" />
     </bytecodeTargetLevel>
