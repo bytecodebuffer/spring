@@ -29,6 +29,5 @@
         <module>springboot-start-web</module>
         <module>springboot-schedule-job</module>
         <module>spring-mvc</module>
-        <module>rpc</module>
     </modules>
 </project>

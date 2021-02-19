@@ -10,22 +10,25 @@
         <module name="springboot-insert-batch" />
         <module name="spring-mvc" />
         <module name="springboot-easy-captcha" />
-        <module name="springboot-kafka-consumer" />
         <module name="springboot-schedule-job" />
         <module name="demo-tool-util" />
-        <module name="springboot-redis" />
         <module name="springboot-elasticsearch-6.x" />
         <module name="demo-kafka-client" />
         <module name="springboot-kafka-producer" />
-        <module name="springboot-elasticsearch" />
         <module name="springboot-websocket" />
-        <module name="springboot-solr" />
-        <module name="springboot-start-web" />
         <module name="demo-thread" />
-        <module name="springboot-time-task" />
+        <module name="springboot-solr" />
         <module name="springboot-tx-cos-image" />
-        <module name="springboot-stl-demo" />
         <module name="springboot-annotation" />
+        <module name="tool-util" />
+        <module name="springboot-kafka-consumer" />
+        <module name="thread" />
+        <module name="kafka-client" />
+        <module name="springboot-redis" />
+        <module name="springboot-elasticsearch" />
+        <module name="springboot-start-web" />
+        <module name="springboot-time-task" />
+        <module name="springboot-stl-demo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

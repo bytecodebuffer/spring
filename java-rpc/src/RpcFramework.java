@@ -68,6 +68,14 @@ public class RpcFramework {
         }
     }
 
+    /**
+     * 使用服务
+     * @param interfaceClass
+     * @param host
+     * @param port
+     * @param <T>
+     * @return
+     */
     public static <T> T refer(final Class<T> interfaceClass,final String host,final int port){
         if( interfaceClass == null ){
             throw new IllegalArgumentException("interfaceClass is null");
