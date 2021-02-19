@@ -16,23 +16,28 @@
         <module name="demo-kafka-client" />
         <module name="springboot-kafka-producer" />
         <module name="springboot-websocket" />
-        <module name="demo-thread" />
         <module name="springboot-solr" />
+        <module name="demo-thread" />
         <module name="springboot-tx-cos-image" />
+        <module name="spring-boot-kafka-producer" />
         <module name="springboot-annotation" />
+        <module name="spring-boot-elasticsearch-6.x" />
         <module name="tool-util" />
+        <module name="rpc" />
         <module name="springboot-kafka-consumer" />
         <module name="thread" />
+        <module name="springboot-easy-acptcha" />
         <module name="kafka-client" />
         <module name="springboot-redis" />
+        <module name="schedule-job" />
         <module name="springboot-elasticsearch" />
         <module name="springboot-start-web" />
         <module name="springboot-time-task" />
         <module name="springboot-stl-demo" />
+        <module name="spring-boot-kafka-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="rpc" target="8" />
       <module name="spring-boot-start" target="8" />
       <module name="springboot-gaodeMap" target="8" />
     </bytecodeTargetLevel>
@@ -42,6 +47,8 @@
       <module name="demo-kafka-client" options="-parameters" />
       <module name="demo-thread" options="" />
       <module name="demo-tool-util" options="-parameters" />
+      <module name="kafka-client" options="-parameters" />
+      <module name="spring-boot-kafka-producer" options="-parameters" />
       <module name="spring-boot-start" options="-parameters" />
       <module name="springboot-annotation" options="-parameters" />
       <module name="springboot-easy-captcha" options="-parameters" />

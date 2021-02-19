@@ -1,7 +1,6 @@
 package utils.collect.list;
 
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * @author bz

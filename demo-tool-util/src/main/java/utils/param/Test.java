@@ -1,6 +1,5 @@
 package utils.param;
 
-import org.apache.commons.lang3.ArrayUtils;
 
 import java.util.Arrays;
 import java.util.List;
@@ -13,10 +12,6 @@ import java.util.List;
  */
 public class Test {
 
-    void setAge(User u){
-       u.setAge(20);
-    }
-
     public static void main(String[] args) {
         List<User> userList = Arrays.asList(
                 new User("zhang"),
@@ -24,7 +19,6 @@ public class Test {
                 new User("wang")
         );
 
-        userList.stream().forEach(e->e.setAge(10));
 
         userList.stream().forEach(e->System.out.println(e));
 
