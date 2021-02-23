@@ -51,6 +51,7 @@
       <module name="spring-boot-kafka-producer" options="-parameters" />
       <module name="spring-boot-start" options="-parameters" />
       <module name="springboot-annotation" options="-parameters" />
+      <module name="springboot-easy-acptcha" options="-parameters" />
       <module name="springboot-easy-captcha" options="-parameters" />
       <module name="springboot-elasticsearch" options="-parameters" />
       <module name="springboot-elasticsearch-6.x" options="-parameters" />

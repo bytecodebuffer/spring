@@ -4,16 +4,16 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.TypeReference;
 import com.alibaba.fastjson.parser.Feature;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 /**
  * @author bz
- * @date 2020/11/19
+ * @date 2021/2/23
  */
 public class JsonUtils {
-
     public static String obj2json(Object obj) {
         return JSON.toJSONString(obj);
     }

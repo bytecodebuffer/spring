@@ -1,6 +1,6 @@
 package utils.base;
 
-import io.micrometer.core.lang.Nullable;
+
 
 /**
  * @author bz
@@ -8,7 +8,7 @@ import io.micrometer.core.lang.Nullable;
  */
 public class StringUtil {
 
-    public static boolean isBlank(@Nullable String string) {
+    public static boolean isBlank( String string) {
         if (!isEmpty(string)) {
             for (int i = 0; i < string.length(); ++i) {
                 if (!Character.isWhitespace(string.charAt(i))) {
@@ -20,15 +20,15 @@ public class StringUtil {
         return true;
     }
 
-    public static boolean isNotBlank(@Nullable String str) {
+    public static boolean isNotBlank( String str) {
         return !isBlank(str);
     }
 
-    public static boolean isEmpty(@Nullable String string) {
+    public static boolean isEmpty( String string) {
         return string == null || string.isEmpty();
     }
 
-    public static boolean isNotEmpty(@Nullable String string) {
+    public static boolean isNotEmpty( String string) {
         return !isEmpty(string);
     }
 
