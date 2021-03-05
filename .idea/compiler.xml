@@ -24,6 +24,7 @@
         <module name="rpc" />
         <module name="springboot-kafka-consumer" />
         <module name="thread" />
+        <module name="sensitive-word" />
         <module name="springboot-easy-acptcha" />
         <module name="kafka-client" />
         <module name="springboot-redis" />

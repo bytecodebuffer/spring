@@ -30,5 +30,6 @@
         <module>springboot-schedule-job</module>
         <module>spring-mvc</module>
         <module>rpc</module>
+        <module>sensitive-word</module>
     </modules>
 </project>
