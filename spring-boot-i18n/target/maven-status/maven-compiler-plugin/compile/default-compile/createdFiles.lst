@@ -1,0 +1,4 @@
+com\bai\Application.class
+com\bai\controller\UserController.class
+com\bai\service\MessageService.class
+com\bai\config\I18nConfig.class

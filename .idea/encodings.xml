@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/demo-kafka-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-thread/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-tool-util/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sensitive-word/src/main/java/SensitiveWordInit.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-elasticsearch-6.x/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-elasticsearch-6.x/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-i18n/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-i18n/src/main/java/com/bai/Application.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-i18n/src/main/java/com/bai/config/SwaggerConfig.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-i18n/src/main/java/com/bai/config/WebConfig.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-i18n/src/main/java/com/bai/controller/UserController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-i18n/src/main/java/com/bai/service/MessageService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-kafka-producer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-kafka-producer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-mvc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-mvc/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-annotation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-easy-captcha/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-easy-captcha/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot-elasticsearch-6.x/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot-elasticsearch-6.x/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-elasticsearch/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-elasticsearch/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-insert-batch/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-insert-batch/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-kafka-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-kafka-consumer/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot-kafka-producer/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot-kafka-producer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-schedule-job/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-schedule-job/src/main/resources" charset="UTF-8" />
@@ -32,5 +39,6 @@
     <file url="file://$PROJECT_DIR$/springboot-websocket-kafka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-websocket-kafka/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-websocket/src/main/java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

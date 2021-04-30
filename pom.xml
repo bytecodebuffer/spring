@@ -23,13 +23,14 @@
         <module>springboot-stl-demo</module>
         <module>demo-thread</module>
         <module>springboot-websocket-kafka</module>
-        <module>springboot-kafka-producer</module>
+        <module>spring-boot-kafka-producer</module>
         <module>springboot-kafka-consumer</module>
-        <module>springboot-elasticsearch-6.x</module>
+        <module>spring-boot-elasticsearch-6.x</module>
         <module>springboot-start-web</module>
         <module>springboot-schedule-job</module>
         <module>spring-mvc</module>
         <module>rpc</module>
         <module>sensitive-word</module>
+        <module>spring-boot-i18n</module>
     </modules>
 </project>
