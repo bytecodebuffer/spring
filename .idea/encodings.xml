@@ -8,9 +8,9 @@
     <file url="file://$PROJECT_DIR$/spring-boot-elasticsearch-6.x/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-elasticsearch-6.x/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-i18n/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot-i18n/src/main/java/com/bai/Application.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-i18n/src/main/java/com/bai/I18nApplication.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-i18n/src/main/java/com/bai/controller/UserController.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot-i18n/src/main/java/com/bai/service/MessageService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-i18n/src/main/java/com/bai/service/MessageUtils.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-kafka-producer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-kafka-producer/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-mvc/src/main/java" charset="UTF-8" />

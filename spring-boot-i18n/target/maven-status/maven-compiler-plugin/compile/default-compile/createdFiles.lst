@@ -1,4 +1,8 @@
-com\bai\Application.class
+com\bai\config\LocaleConfig.class
+com\bai\config\LangLocaleResolver.class
 com\bai\controller\UserController.class
-com\bai\service\MessageService.class
-com\bai\config\I18nConfig.class
+com\bai\service\MessageUtils.class
+com\bai\filter\ParameterFilter.class
+com\bai\util\ThreadLocalUtils.class
+com\bai\I18nApplication.class
+com\bai\config\FilterConfig.class

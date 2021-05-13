@@ -7,7 +7,3 @@ spring:
     encoding: utf-8
     cache-duration: 3600
 
-  thymeleaf:
-    prefix: classpath:/templates/
-    suffix: .html
-    encoding: utf-8
