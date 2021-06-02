@@ -9,7 +9,6 @@
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>spring-boot-elasticsearch-6.x</artifactId>
 
     <dependencies>

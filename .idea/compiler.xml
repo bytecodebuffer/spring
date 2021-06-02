@@ -17,6 +17,7 @@
         <module name="springboot-websocket" />
         <module name="springboot-solr" />
         <module name="demo-thread" />
+        <module name="springboot-transaction-isolation" />
         <module name="springboot-tx-cos-image" />
         <module name="spring-boot-kafka-producer" />
         <module name="springboot-annotation" />
@@ -70,6 +71,7 @@
       <module name="springboot-start-web" options="-parameters" />
       <module name="springboot-stl-demo" options="-parameters" />
       <module name="springboot-time-task" options="-parameters" />
+      <module name="springboot-transaction-isolation" options="-parameters" />
       <module name="springboot-tx-cos-image" options="-parameters" />
       <module name="springboot-websocket" options="-parameters" />
       <module name="springboot-websocket-kafka" options="" />
