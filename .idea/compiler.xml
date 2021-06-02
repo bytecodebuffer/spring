@@ -45,13 +45,16 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo-kafka-client" options="-parameters" />
-      <module name="demo-thread" options="" />
+      <module name="demo-thread" options="-parameters" />
       <module name="demo-tool-util" options="-parameters" />
       <module name="kafka-client" options="-parameters" />
+      <module name="rpc" options="-parameters" />
+      <module name="sensitive-word" options="-parameters" />
       <module name="spring-boot-elasticsearch-6.x" options="-parameters" />
       <module name="spring-boot-i18n" options="-parameters" />
       <module name="spring-boot-kafka-producer" options="-parameters" />
       <module name="spring-boot-start" options="-parameters" />
+      <module name="spring-mvc" options="-parameters" />
       <module name="springboot-annotation" options="-parameters" />
       <module name="springboot-easy-acptcha" options="-parameters" />
       <module name="springboot-easy-captcha" options="-parameters" />
@@ -69,7 +72,7 @@
       <module name="springboot-time-task" options="-parameters" />
       <module name="springboot-tx-cos-image" options="-parameters" />
       <module name="springboot-websocket" options="-parameters" />
-      <module name="springboot-websocket-kafka" options="-parameters" />
+      <module name="springboot-websocket-kafka" options="" />
     </option>
   </component>
 </project>

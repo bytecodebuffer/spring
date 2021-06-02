@@ -4,7 +4,10 @@
     <file url="file://$PROJECT_DIR$/demo-kafka-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-thread/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/demo-tool-util/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rpc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sensitive-word/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sensitive-word/src/main/java/SensitiveWordInit.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sensitive-word/src/main/java/SensitivewordFilter.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-elasticsearch-6.x/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-elasticsearch-6.x/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-i18n/src/main/java" charset="UTF-8" />

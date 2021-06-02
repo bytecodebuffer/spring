@@ -81,7 +81,7 @@ public class SensitivewordFilter {
 			if(nowMap != null){
 				matchFlag++;
 				if("1".equals(nowMap.get("isEnd"))){
-					flag = true;       //???????¦Ë?true   
+					flag = true;       //???????Î»?true   
 					if(SensitivewordFilter.minMatchTYpe == matchType){
 						break;
 					}
@@ -99,15 +99,15 @@ public class SensitivewordFilter {
 	
 	public static void main(String[] args) {
 		SensitivewordFilter filter = new SensitivewordFilter();
-		System.out.println("Ãô¸Ğ´ÊµÄÊıÁ¿£º" + filter.sensitiveWordMap.size());
-		String string = "Ì«¶àµÄ°×Æ¤ÖíÉË¸ĞÇé»³Ò²ĞíÖ»¾ÖÏŞÓÚËÇÑø»ùµØ Ó«Ä»ÖĞµÄÇé½Ú£¬Ö÷ÈË¹«³¢ÊÔ×ÅÈ¥ÓÃÄ³ÖÖ·½Ê½½¥½¥µÄºÜäìÈ÷µØÊÍ×ÔÉ±Ö¸ÄÏ»³ÄÇĞ©×Ô¼º¾­ÀúµÄÉË¸Ğ¡£"
-				+ "È»ºó·¨.ÂÖ.¹¦ ÎÒÃÇµÄ°çÑİµÄ½ÇÉ«¾ÍÊÇ¸úËæ×ÅÖ÷ÈË¹«µÄÏ²ºì¿ÍÁªÃË Å­°§ÀÖ¶ø¹ıÓÚÇ£Ç¿µÄ°Ñ×Ô¼ºµÄÇé¸ĞÒ²¸½¼ÓÓÚÒøÄ»Çé½ÚÖĞ£¬È»ºó¸Ğ¶¯¾ÍÁ÷Àá£¬"
-				+ "ÄÑ¹ı¾ÍÌÉÔÚÄ³Ò»¸öÈËµÄ»³Àï¾¡ÇéµÄ²ûÊöĞÄìé»òÕßÊÖ»ú¿¨ºÚ¹íÆ÷Ò»¸öÈËÒ»±­ºì¾ÆÒ»²¿µçÓ°ÔÚÒ¹Èı.¼¶.Æ¬ ÉîÈË¾²µÄÍíÉÏ£¬¹ØÉÏµç»°¾²¾²µÄ·¢´ô×Å¡£";
-		System.out.println("´ı¼ì²âÓï¾ä×ÖÊı£º" + string.length());
+		System.out.println("æ•æ„Ÿè¯çš„æ•°é‡ï¼š" + filter.sensitiveWordMap.size());
+		String string = "å¤ªå¤šçš„ç™½çš®çŒªä¼¤æ„Ÿæƒ…æ€€ä¹Ÿè®¸åªå±€é™äºé¥²å…»åŸºåœ° è§å¹•ä¸­çš„æƒ…èŠ‚ï¼Œä¸»äººå…¬å°è¯•ç€å»ç”¨æŸç§æ–¹å¼æ¸æ¸çš„å¾ˆæ½‡æ´’åœ°é‡Šè‡ªæ€æŒ‡å—æ€€é‚£äº›è‡ªå·±ç»å†çš„ä¼¤æ„Ÿã€‚"
+				+ "ç„¶åæ³•.è½®.åŠŸ æˆ‘ä»¬çš„æ‰®æ¼”çš„è§’è‰²å°±æ˜¯è·Ÿéšç€ä¸»äººå…¬çš„å–œçº¢å®¢è”ç›Ÿ æ€’å“€ä¹è€Œè¿‡äºç‰µå¼ºçš„æŠŠè‡ªå·±çš„æƒ…æ„Ÿä¹Ÿé™„åŠ äºé“¶å¹•æƒ…èŠ‚ä¸­ï¼Œç„¶åæ„ŸåŠ¨å°±æµæ³ªï¼Œ"
+				+ "éš¾è¿‡å°±èººåœ¨æŸä¸€ä¸ªäººçš„æ€€é‡Œå°½æƒ…çš„é˜è¿°å¿ƒæ‰‰æˆ–è€…æ‰‹æœºå¡é»‘é¬¼å™¨ä¸€ä¸ªäººä¸€æ¯çº¢é…’ä¸€éƒ¨ç”µå½±åœ¨å¤œä¸‰.çº§.ç‰‡ æ·±äººé™çš„æ™šä¸Šï¼Œå…³ä¸Šç”µè¯é™é™çš„å‘å‘†ç€ã€‚";
+		System.out.println("å¾…æ£€æµ‹è¯­å¥å­—æ•°ï¼š" + string.length());
 		long beginTime = System.currentTimeMillis();
 		Set<String> set = filter.getSensitiveWord(string, 1);
 		long endTime = System.currentTimeMillis();
-		System.out.println("Óï¾äÖĞ°üº¬Ãô¸Ğ´ÊµÄ¸öÊıÎª£º" + set.size() + "¡£°üº¬£º" + set);
-		System.out.println("×Ü¹²ÏûºÄÊ±¼äÎª£º" + (endTime - beginTime));
+		System.out.println("è¯­å¥ä¸­åŒ…å«æ•æ„Ÿè¯çš„ä¸ªæ•°ä¸ºï¼š" + set.size() + "ã€‚åŒ…å«ï¼š" + set);
+		System.out.println("æ€»å…±æ¶ˆè€—æ—¶é—´ä¸ºï¼š" + (endTime - beginTime));
 	}
 }
