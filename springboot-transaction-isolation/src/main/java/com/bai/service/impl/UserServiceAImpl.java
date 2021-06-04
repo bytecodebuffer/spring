@@ -2,10 +2,11 @@ package com.bai.service.impl;
 
 import com.bai.dao.UserDao;
 import com.bai.model.User;
-import com.bai.service.UserService;
+import com.bai.service.UserServiceA;
+import com.bai.service.UserServiceB;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
@@ -13,9 +14,10 @@ import java.util.List;
 
 @Service
 @AllArgsConstructor
-public class UserServiceImpl implements UserService {
+public class UserServiceAImpl implements UserServiceA {
 
     private final UserDao userDao;
+    private final UserServiceB userServiceB;
 
 
     @Override
@@ -23,16 +25,17 @@ public class UserServiceImpl implements UserService {
         return userDao.getUserList();
     }
 
-    @Transactional(isolation = Isolation.DEFAULT,rollbackFor = Exception.class)
+    @Transactional(propagation = Propagation.REQUIRED,rollbackFor = NullPointerException.class)
     @Override
     public List<User> addMoney(Integer userId, BigDecimal salary) {
         userDao.addUserMoneyById(userId,salary);
-        addMoney20(userId);
+        try {
+            userServiceB.addMoney(userId, BigDecimal.valueOf(20));
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         return userDao.getUserList();
     }
 
-    public void addMoney20(Integer id){
-        int i = 10/0;
-        userDao.addUserMoneyById(id,BigDecimal.valueOf(20));
-    }
+
 }

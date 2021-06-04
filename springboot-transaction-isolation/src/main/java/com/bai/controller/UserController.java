@@ -1,8 +1,7 @@
 package com.bai.controller;
 
-import com.bai.dao.UserDao;
 import com.bai.model.User;
-import com.bai.service.UserService;
+import com.bai.service.UserServiceA;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -16,7 +15,7 @@ import java.util.List;
 public class UserController {
 
 
-   private final UserService userService;
+   private final UserServiceA userService;
 
     @GetMapping("/list")
     public List<User> userList(){
@@ -27,4 +26,6 @@ public class UserController {
     public List<User> addMoney(Integer id, BigDecimal salary){
         return userService.addMoney(id,salary);
     }
+
+
 }
