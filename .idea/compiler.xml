@@ -12,6 +12,7 @@
         <module name="springboot-easy-captcha" />
         <module name="springboot-schedule-job" />
         <module name="demo-tool-util" />
+        <module name="springboot-filter-interceptor" />
         <module name="demo-kafka-client" />
         <module name="spring-boot-i18n" />
         <module name="springboot-websocket" />
@@ -61,6 +62,7 @@
       <module name="springboot-easy-captcha" options="-parameters" />
       <module name="springboot-elasticsearch" options="-parameters" />
       <module name="springboot-elasticsearch-6.x" options="-parameters" />
+      <module name="springboot-filter-interceptor" options="-parameters" />
       <module name="springboot-gaodeMap" options="-parameters" />
       <module name="springboot-insert-batch" options="-parameters" />
       <module name="springboot-kafka-consumer" options="-parameters" />

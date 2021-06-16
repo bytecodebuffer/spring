@@ -8,6 +8,6 @@ public class HelloServiceImpl implements HelloService{
 
     @Override
     public String call() {
-        return "新年快乐";
+        return "Hello World";
     }
 }
