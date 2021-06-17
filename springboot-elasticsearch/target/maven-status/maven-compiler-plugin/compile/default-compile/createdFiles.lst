@@ -1,0 +1,4 @@
+elasticsearch\ElasticSearchApplication.class
+elasticsearch\controller\SearchController.class
+elasticsearch\model\Address.class
+elasticsearch\repository\AddressRepository.class

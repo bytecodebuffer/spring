@@ -1,0 +1,9 @@
+supoman\basedMultithread\MultithreadScheduleTask.class
+supoman\controller\UserController.class
+supoman\basedQuartz\job\ClarkJob.class
+supoman\basedStatic\StaticScheduleTask.class
+supoman\basedQuartz\QuartzConfiguration.class
+supoman\TimeTaskApplication.class
+supoman\basedDynamic\DynamicScheduleTask.class
+supoman\basedQuartz\job\HelloWorldJob.class
+supoman\dao\UserDao.class

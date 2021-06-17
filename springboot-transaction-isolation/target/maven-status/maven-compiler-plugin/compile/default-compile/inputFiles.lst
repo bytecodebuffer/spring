@@ -1,0 +1,8 @@
+D:\work\spring\springboot-transaction-isolation\src\main\java\com\bai\model\User.java
+D:\work\spring\springboot-transaction-isolation\src\main\java\com\bai\service\impl\UserServiceAImpl.java
+D:\work\spring\springboot-transaction-isolation\src\main\java\com\bai\controller\UserController.java
+D:\work\spring\springboot-transaction-isolation\src\main\java\com\bai\service\UserServiceB.java
+D:\work\spring\springboot-transaction-isolation\src\main\java\com\bai\TransactionApplication.java
+D:\work\spring\springboot-transaction-isolation\src\main\java\com\bai\dao\UserDao.java
+D:\work\spring\springboot-transaction-isolation\src\main\java\com\bai\service\UserServiceA.java
+D:\work\spring\springboot-transaction-isolation\src\main\java\com\bai\service\impl\UserServiceBImpl.java

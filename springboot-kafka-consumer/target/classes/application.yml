@@ -1,0 +1,20 @@
+# 服务端口
+server:
+  port: 9004
+
+spring:
+  kafka:
+    bootstrap-servers: kafka-test-dev.forexmedia.com:9092,kafka-test-dev.forexmedia.com:9093,kafka-test-dev.forexmedia.com:9094,kafka-test-dev.forexmedia.com:9095
+    consumer:
+      group-id: message.group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+
+stl:
+  config:
+    kafka:
+      topic:
+        message-push: message.push.test

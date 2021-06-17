@@ -1,0 +1,8 @@
+com\bai\service\impl\UserServiceBImpl.class
+com\bai\service\UserServiceB.class
+com\bai\service\UserServiceA.class
+com\bai\controller\UserController.class
+com\bai\model\User.class
+com\bai\service\impl\UserServiceAImpl.class
+com\bai\dao\UserDao.class
+com\bai\TransactionApplication.class

@@ -1,0 +1,6 @@
+D:\work\spring\springboot-easy-captcha\src\main\java\captcha\util\RedisUtils.java
+D:\work\spring\springboot-easy-captcha\src\main\java\captcha\session\GeneratorSession.java
+D:\work\spring\springboot-easy-captcha\src\main\java\captcha\CaptchaApplication.java
+D:\work\spring\springboot-easy-captcha\src\main\java\captcha\properties\ValidateCodeProperties.java
+D:\work\spring\springboot-easy-captcha\src\main\java\captcha\properties\ImageType.java
+D:\work\spring\springboot-easy-captcha\src\main\java\captcha\controller\ValidateCodeController.java

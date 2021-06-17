@@ -1,0 +1,29 @@
+server:
+  port: 8000
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/sys?characterEncoding=UTF-8&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+  jackson:
+    time-zone: GMT%2B8
+    date-format: yyyy-MM-dd HH:mm:ss
+
+  data:
+    redis:
+      repositories:
+        enabled: true
+  redis:
+    host: r-wz96lagf426z76dc5ppd.redis.rds.aliyuncs.com
+    port: 6379
+    password: x#rFd23dDSx*dsx8*x22
+    database: 49
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

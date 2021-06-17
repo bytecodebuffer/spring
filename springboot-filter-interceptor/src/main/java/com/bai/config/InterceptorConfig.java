@@ -9,6 +9,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-        registry.addInterceptor(new LogInterceptor()).addPathPatterns("/*");
+        //registry.addInterceptor(new LogInterceptor()).addPathPatterns("/*").order(0);
+        //registry.addInterceptor(new AuthInterceptor()).addPathPatterns("/*").order(1);
     }
 }

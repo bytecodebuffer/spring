@@ -1,0 +1,45 @@
+#服务端口
+server:
+  port: 8888
+
+#是否开启swagger
+swagger:
+  enable: true
+
+#spring配置
+spring:
+  #数据源配置
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.cj.jdbc.Driver
+    #腾讯云服务器DB
+    url: jdbc:mysql://rm-wz947cz2448qx68tdno.mysql.rds.aliyuncs.com:3306/dev_demo?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&zeroDateTimeBehavior=CONVERT_TO_NULL
+    username: demo_user
+    password: Bailun2020
+    #连接池的配置信息
+    initialSize: 10
+    minIdle: 10
+    maxActive: 100
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+
+  redis:
+    open: true  # 是否开启redis缓存  true开启   false关闭
+    host: r-wz96lagf426z76dc5ppd.redis.rds.aliyuncs.com
+    port: 6379
+    password: x#rFd23dDSx*dsx8*x22
+    timeout: 5000  # 连接超时时长（毫秒）
+    database: 100 #redis和分析师项目共用，此项目database从100往后
+    pool:
+      jedis:
+        max-active: 1000  # 连接池最大连接数（使用负值表示没有限制）
+        max-wait: -1      # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-idle: 8       # 连接池中的最大空闲连接
+        min-idle: 0       # 连接池中的最小空闲连接

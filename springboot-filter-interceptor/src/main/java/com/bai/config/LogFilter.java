@@ -16,18 +16,18 @@ public class LogFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        log.info("初始化 init 方法");
+        log.info("log init 方法");
     }
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        log.info("doFilter 方法");
+        log.info("log doFilter 方法");
         chain.doFilter(request,response);
 
     }
 
     @Override
     public void destroy() {
-        log.info("销毁 destroy 方法");
+        log.info("log  销毁 destroy 方法");
     }
 }
