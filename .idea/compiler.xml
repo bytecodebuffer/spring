@@ -35,6 +35,7 @@
         <module name="springboot-start-web" />
         <module name="springboot-time-task" />
         <module name="springboot-stl-demo" />
+        <module name="redis-lock" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -50,6 +51,7 @@
       <module name="demo-thread" options="-parameters" />
       <module name="demo-tool-util" options="-parameters" />
       <module name="kafka-client" options="-parameters" />
+      <module name="redis-lock" options="-parameters" />
       <module name="rpc" options="-parameters" />
       <module name="sensitive-word" options="-parameters" />
       <module name="spring-boot-elasticsearch-6.x" options="-parameters" />

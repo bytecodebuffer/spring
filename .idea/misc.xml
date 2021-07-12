@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/spring-mvc/pom.xml" />
         <option value="$PROJECT_DIR$/rpc/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-filter-interceptor/pom.xml" />
+        <option value="$PROJECT_DIR$/redis-lock/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
