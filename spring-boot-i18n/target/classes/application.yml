@@ -1,9 +1,0 @@
-﻿
-
-# 配置resource bundle资源文件的前缀名eg:i18n是文件夹名，messages是资源文件名，支持的符号有.号或者/
-spring:
-  messages:
-    basename: i18n.messages
-    encoding: utf-8
-    cache-duration: 3600
-

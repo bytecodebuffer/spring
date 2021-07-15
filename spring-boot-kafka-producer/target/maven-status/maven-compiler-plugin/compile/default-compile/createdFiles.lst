@@ -1,4 +1,0 @@
-producer\kafka\KafkaTopicConfig.class
-producer\KafkaProducer.class
-producer\controller\KafkaController.class
-producer\kafka\KafkaProducerManager.class

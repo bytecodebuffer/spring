@@ -1,6 +1,0 @@
-top\model\VO\SearchResult.class
-top\supoman\controller\SolrController.class
-top\SpringbootSolrApplication.class
-top\model\entity\User.class
-top\service\SolrService.class
-top\service\impl\SolrServiceImpl.class

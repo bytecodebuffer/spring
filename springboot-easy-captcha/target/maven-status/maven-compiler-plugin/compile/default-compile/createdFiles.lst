@@ -1,6 +1,0 @@
-captcha\session\GeneratorSession.class
-captcha\util\RedisUtils.class
-captcha\CaptchaApplication.class
-captcha\properties\ImageType.class
-captcha\controller\ValidateCodeController.class
-captcha\properties\ValidateCodeProperties.class
