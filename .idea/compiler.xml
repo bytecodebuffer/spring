@@ -30,6 +30,7 @@
         <module name="sensitive-word" />
         <module name="springboot-easy-acptcha" />
         <module name="kafka-client" />
+        <module name="demo-rabbitmq" />
         <module name="springboot-redis" />
         <module name="springboot-elasticsearch" />
         <module name="springboot-start-web" />
@@ -39,33 +40,30 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spring-boot-start" target="8" />
       <module name="springboot-elasticsearch-6.x" target="1.8" />
-      <module name="springboot-gaodeMap" target="8" />
       <module name="springboot-kafka-producer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_STRING" value="-encoding utf-8" />
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo-kafka-client" options="-parameters" />
+      <module name="demo-rabbitmq" options="-parameters" />
       <module name="demo-thread" options="-parameters" />
       <module name="demo-tool-util" options="-parameters" />
-      <module name="kafka-client" options="-parameters" />
       <module name="redis-lock" options="-parameters" />
       <module name="rpc" options="-parameters" />
       <module name="sensitive-word" options="-parameters" />
+      <module name="spring" options="" />
       <module name="spring-boot-elasticsearch-6.x" options="-parameters" />
       <module name="spring-boot-i18n" options="-parameters" />
       <module name="spring-boot-kafka-producer" options="-parameters" />
-      <module name="spring-boot-start" options="-parameters" />
       <module name="spring-mvc" options="-parameters" />
       <module name="springboot-annotation" options="-parameters" />
-      <module name="springboot-easy-acptcha" options="-parameters" />
       <module name="springboot-easy-captcha" options="-parameters" />
       <module name="springboot-elasticsearch" options="-parameters" />
       <module name="springboot-elasticsearch-6.x" options="-parameters" />
       <module name="springboot-filter-interceptor" options="-parameters" />
-      <module name="springboot-gaodeMap" options="-parameters" />
       <module name="springboot-insert-batch" options="-parameters" />
       <module name="springboot-kafka-consumer" options="-parameters" />
       <module name="springboot-kafka-producer" options="-parameters" />

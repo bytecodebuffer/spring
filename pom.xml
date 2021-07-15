@@ -39,6 +39,7 @@
         <module>sensitive-word</module>
         <module>spring-boot-i18n</module>
         <module>springboot-transaction-isolation</module>
+        <module>demo-rabbitmq</module>
     </modules>
 
     <properties>

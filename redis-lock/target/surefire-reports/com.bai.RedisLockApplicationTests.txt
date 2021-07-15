@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.bai.RedisLockApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.784 s - in com.bai.RedisLockApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.617 s - in com.bai.RedisLockApplicationTests
